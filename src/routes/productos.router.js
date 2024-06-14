@@ -4,6 +4,8 @@ import fs from "fs";
 import path from "path";
 const productsFilePath = path.resolve("./src/data/products.json");
 
+	
+
 // Lee y devuelve el contenido de products.Json, el cual contiene los datos de los productos.
 const getProducts = () => {
 	try {
@@ -63,7 +65,7 @@ router.post("/", (req, res) => {
 	} = req.body;
 	if (!title || !description || !code || !price || !stock || !category) {
 		return res.json({
-			message: "Todos los campos son requeridos, excepto thumbanils",
+			message: "Todos los campos son requeridos, excepto thumbnails",
 		});
 	}
 

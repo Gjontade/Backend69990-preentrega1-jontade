@@ -18,10 +18,10 @@ app.get("/", (req, res) => {
 	res.send("Bienvenidos a la App de: Gonzalo Federico Jontade.");
 });
 
-// Rutas productos
+// Ruta productos
 app.use("/api/products", productosRouter);
 
-// Rutas carritos
+// Ruta carritos
 app.use("/api/carts", carritoRouter);
 
 app.get("*", (req, res) => {
